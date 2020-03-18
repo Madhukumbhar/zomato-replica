@@ -1,3 +1,220 @@
-@use './reset.scss';
+$liststyle: none;
+$navimgheight: 40px;
+$navimgmargin: 5px;
+$accountmargin: 20px;
+$marginlr: 30px;
+$maxwidth: 100%;
 
-/* Add your css here */
+html{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body *,
+body *::after,
+body *::before{
+    box-sizing: border-box;
+}
+
+body{
+    background: #f3f3f3;
+}
+//-----------navbar or header----------//
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+.h-container a:hover{
+    background-color: blanchedalmond;
+    border-radius: 3px;
+    color: black;
+}
+.h-container .nav li:hover{
+    border-radius: 3px;
+    @extend .h-container;
+} 
+.float-left img{
+    height: $navimgheight;
+    margin: $navimgmargin;
+}
+
+.nav li{
+    list-style: $liststyle;
+    margin: $navimgmargin;
+}
+.nav li a img{
+    height: $navimgheight;
+}
+.h-container{
+    background-color: oldlace;
+    
+}
+
+.nav{
+    margin-right: $accountmargin;
+}
+//--------background image & content over it------//
+#bg{
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner #zomatologo{
+    width: 20%;
+    height: 100px;
+}
+#bg #login a{
+    float: right;
+    margin: $accountmargin;
+    color: white;
+    padding: 7px;
+
+}
+#bg #login a:hover{
+    background-color: cornsilk;
+    color: black;
+    border-radius: 3px;
+}
+#bg #login .account{
+    margin: $accountmargin;
+}
+.banner .d-block{
+    margin-top: 90px;
+}
+.banner .text-center{
+    color: white;
+    margin-top: $marginlr;
+    margin-bottom: $marginlr;
+}
+.banner  #search-rest{
+    margin-bottom: 70px;
+    border-radius: 8px;
+    padding: $navimgmargin;
+    margin-left: -5px;
+}
+.banner .search-restaurant #search-btn{
+   margin-left: $marginlr;
+}
+
+//-----collections---------//
+.row .trending{
+    margin-left: -30px;
+}
+.row .demo{
+    display: flex;
+    flex: 1 1 auto;
+}
+.row .d-block{
+    padding: 6px;
+    color: crimson;
+    border-radius: $navimgmargin;
+    margin-top: -20px;
+
+}
+
+
+//-----Delivery location widget------//
+.row{
+    margin: $marginlr;    //collections//
+}
+.row .content-widget{
+    margin: -18px;
+}
+.widget{
+    background-color: white;
+    padding: 15px;
+    padding-bottom: $marginlr;
+
+}
+.content-widget .search-del{
+    border-radius: 8px;
+    padding: $navimgmargin;
+}
+
+//-----categories/Quick searches----------//
+
+.categories li{
+    list-style: $liststyle;
+}
+.categories{
+    margin: $marginlr;
+}
+.categories .row .col-sm{
+    margin-left: -30px;
+}
+.categories .category-list{
+    background-color: white;
+    padding-left: $navimgmargin;
+}
+.categories .category-list li figcaption{
+    text-align: center;
+}
+
+//------Localities-------//
+.localities{
+    margin: $marginlr;
+}
+.localities .container li{
+    
+    list-style: $liststyle;
+    padding: 2px;
+}   
+.localities .locality-list{
+    background-color: white;
+    padding: 1px;
+} 
+
+//------Footer-------//
+    
+.fcontainer .card{
+    margin: $marginlr;
+}
+.footer-wrapper #zomatologo{
+    width: 20%;
+    height: 70px;
+    float: left;
+    padding-left: 8%;
+}
+.footer-wrapper .btn{
+    margin-right: $marginlr;
+    margin-top: $accountmargin;
+    padding-left: $accountmargin;
+    padding-right: $accountmargin;
+}
+.footer-wrapper .container li{
+    list-style: $liststyle;
+    padding: 2px;
+    color: darkgray;
+}
+.footer-wrapper .container h5{
+    color: darkgray;
+}
+.footer-wrapper .card-body p{
+    color: darkgray;
+    word-spacing: 12px;
+    display: inline;
+
+}
+.footer-wrapper .card-body .icons{
+    float: right;
+    color: white;
+    margin-right: $marginlr;
+    
+}
+.footer-wrapper .card-body i{
+    margin: 10px;
+    border-radius: 50%;
+    padding: $navimgmargin;
+    background-color: rgba(32, 31, 31, 0.993);
+}
+
+@media only screen and(max-width: 768px)
+{
+    [class*="col-"]{
+        width: 100%;
+    }
+}
+
+
+
+
