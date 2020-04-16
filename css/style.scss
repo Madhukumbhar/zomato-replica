@@ -33,6 +33,7 @@ a{
     border-radius: 3px;
     @extend .h-container;
 } 
+
 .float-left img{
     height: $navimgheight;
     margin: $navimgmargin;
@@ -126,7 +127,7 @@ a{
     padding-bottom: $marginlr;
 
 }
-.content-widget .search-del{
+.content-widget #search-del{
     border-radius: 8px;
     padding: $navimgmargin;
 }

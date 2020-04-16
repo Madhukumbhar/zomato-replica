@@ -12,16 +12,12 @@
     </head>
     <body>
         <header class="h-container">
-            
             <div>
-                
                 <a href="#" class="float-left"><img src="../images/get-the-app-plain.svg" alt="Get the app">Get the app</a>
-                
                 <ul class="nav justify-content-end">
                     <li id="nav_item_1"><a href="#"><img src="../images/order-online.svg" alt="Order online">Order Food</a></li>
                     <li id="nav_item_2"><a href="#"><img src="../images/book-a-table.svg" alt="Book a table">Book a Table</a></li>
                     <li id="nav_item_3"><a href="#"><img src="../images/gold.svg" alt="Zomato gold">Zomato Gold</a></li>
-
                 </ul>
             </div>
         </header>
@@ -141,9 +137,9 @@
                         <h6 class="card-subtitle mb-2 text-muted">Best restaurants delivering to your doorstep</h6>
                         <div class="widget">
                             <h4>Enter your delivery location</h4><br>
-                            <input  class="search-del" type="text"  placeholder="Type delivery location here" size="28px">
-                            <button  type="button" class="btn btn-light" class="detect-btn">Detect</button><br><br>
-                            <button  type="button" class="btn btn-success btn-lg btn-block" class="order-btn">Order Food Online!</button><br><br>
+                            <input  id="search-del" type="text"  placeholder="Type delivery location here" size="28px">
+                            <button  class="detect-btn" type="button" class="btn btn-light">Detect</button><br><br>
+                            <button  class="order-btn" type="button" class="btn btn-success btn-lg btn-block">Order Food Online!</button><br><br>
                             <hr style="border: 1px solid green;"><br><br>
                             Use code ZOMATO to get up to 50% OFF. T&Cs apply.
                         </div>
@@ -154,83 +150,82 @@
             
         </div>
 
-
         <section class="categories">
             <h2 id="cat-title">Quick Searches</h2>
             <p id="cat-subtitle" class="text-muted">Discover restaurants by type of meal</p>
-                <ul class="category-list">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm">
-                                <li>
-                                    <figure>
-                                        <img src="../images/delivery.png" alt="Delivery">
-                                        <figcaption>Delivery</figcaption>
-                                    </figure>
-                                </li>
-                            </div>
-                            <div class="col-sm">
-                                <li>
-                                    <figure>
-                                        <img src="../images/pocket-friendly-delivery.png" alt="pocket-Friendly Delivery">
-                                        <figcaption>Pocket-Friendly Delivery</figcaption>
-                                    </figure>
-                                </li>
-                            </div>
-                            <div class="col-sm">
-                                <li>
-                                    <figure>
-                                        <img src="../images/breakfast.png" alt="Breakfast">
-                                        <figcaption>Breakfast</figcaption>
-                                    </figure>
-                                </li>
-                            </div>
-                            <div class="col-sm">
-                                <li>
-                                    <figure>
-                                        <img src="../images/lunch.png" alt="Lunch">
-                                        <figcaption>Lunch</figcaption>
-                                    </figure>
-                                </li>
-                            </div>
-                            <div class="col-sm">
-                                <li>
-                                    <figure>
-                                        <img src="../images/dinner.png" alt="Dinner">
-                                        <figcaption>Dinner</figcaption>
-                                    </figure>
-                                </li>
-                            </div>
-                            <div class="col-sm">
-                                <li>
-                                    <figure>
-                                        <img src="../images/drinks.png" alt="Drinks">
-                                        <figcaption>Drinks & Nightlife</figcaption>
-                                    </figure>
-                                </li>
-                            </div>
-                            <div class="col-sm">
-                                <li>
-                                    <figure>
-                                        <img src="../images/cafes.png" alt="Cafes">
-                                        <figcaption>Cafes</figcaption>
-                                    </figure>
-                                </li>
-                            </div>
-                            <div class="col-sm">
-                                <li>
-                                    <figure>
-                                        <img src="../images/desserts.png" alt="Desserts">
-                                        <figcaption>Desserts & Bakes</figcaption>
-                                    </figure>
-                                </li>
-                            </div>
-
+            <ul class="category-list">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <li>
+                                <figure>
+                                    <img src="../images/delivery.png" alt="Delivery">
+                                    <figcaption>Delivery</figcaption>
+                                </figure>
+                            </li>
+                        </div>
+                        <div class="col-sm">
+                            <li>
+                                <figure>
+                                    <img src="../images/pocket-friendly-delivery.png" alt="pocket-Friendly Delivery">
+                                    <figcaption>Pocket-Friendly Delivery</figcaption>
+                                </figure>
+                            </li>
+                        </div>
+                        <div class="col-sm">
+                            <li>
+                                <figure>
+                                    <img src="../images/breakfast.png" alt="Breakfast">
+                                    <figcaption>Breakfast</figcaption>
+                                </figure>
+                            </li>
+                        </div>
+                        <div class="col-sm">
+                            <li>
+                                <figure>
+                                    <img src="../images/lunch.png" alt="Lunch">
+                                    <figcaption>Lunch</figcaption>
+                                </figure>
+                            </li>
+                        </div>
+                        <div class="col-sm">
+                            <li>
+                                <figure>
+                                    <img src="../images/dinner.png" alt="Dinner">
+                                    <figcaption>Dinner</figcaption>
+                                </figure>
+                            </li>
+                        </div>
+                        <div class="col-sm">
+                            <li>
+                                <figure>
+                                    <img src="../images/drinks.png" alt="Drinks">
+                                   <figcaption>Drinks & Nightlife</figcaption>
+                                </figure>
+                            </li>
+                        </div>
+                        <div class="col-sm">
+                            <li>
+                                <figure>
+                                    <img src="../images/cafes.png" alt="Cafes">
+                                    <figcaption>Cafes</figcaption>
+                                </figure>
+                            </li>
+                        </div>
+                        <div class="col-sm">
+                            <li>
+                                <figure>
+                                    <img src="../images/desserts.png" alt="Desserts">
+                                    <figcaption>Desserts & Bakes</figcaption>
+                                </figure>
+                            </li>
                         </div>
 
                     </div>
 
-                </ul>
+                </div>
+
+            </ul>
         </section>        
 
 

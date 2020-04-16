@@ -133,7 +133,7 @@ a {
   padding-bottom: 30px;
 }
 
-.content-widget .search-del {
+.content-widget #search-del {
   border-radius: 8px;
   padding: 5px;
 }
