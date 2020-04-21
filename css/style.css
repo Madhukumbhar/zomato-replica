@@ -1,6 +1,10 @@
-@use './reset.scss';
-/* Add your css here */
-*, body *, body *::after, body *::before {
+html {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body *,
+body *::after,
+body *::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-decoration: none;
@@ -11,13 +15,7 @@
 }
 
 body {
-  background: #e7e6e6;
-}
-
-html {
-  font-size: 13px;
-  font-family: "Roboto", sans-serif;
-  line-height: 1.30769231;
+  background: #f3f3f3;
 }
 
 .h-container {
@@ -110,13 +108,12 @@ html {
 }
 
 .banner {
-  width: 100%;
-  background-image: url(bg.jpg);
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
-  height: auto;
 }
 
-.banner .sec-top {
+.banner #login {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,15 +128,21 @@ html {
   padding: 10px;
 }
 
-.banner .sec-top h6 {
+.banner #login a {
+  float: right;
+  margin: 20px;
   color: white;
-  padding-right: 15px;
+  padding: 7px;
 }
 
-.banner .sec-top button {
-  border: 1px solid white;
-  background-color: none;
-  color: white;
+.banner #login a:hover {
+  background-color: cornsilk;
+  color: black;
+  border-radius: 3px;
+}
+
+.banner #login .account {
+  margin: 20px;
 }
 
 .search {
@@ -473,155 +476,64 @@ html {
 }
 
 .localities {
-  margin: 15px;
+  margin: 30px;
 }
 
-.localities .loc-head {
-  padding: 15px 0px;
+.localities .container li {
+  list-style: none;
+  padding: 2px;
 }
 
 .localities .locality-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 15px;
   background-color: white;
+  padding: 20px;
 }
 
-.localities .locality-list ul {
-  width: 480px;
-  padding-left: 15px;
-  padding-bottom: 15px;
+.fcontainer .card {
+  margin: 30px;
 }
 
-.localities .locality-list ul li {
-  font-size: 16px;
-  padding-bottom: 10px;
-}
-
-.localities .locality-list ul li span {
-  color: #9d9c9c;
-}
-
-footer {
-  background-color: #292929;
-  margin: 15px;
-  color: #d0cbcb;
-}
-
-footer .foot-top {
+.card-header {
   position: relative;
   top: 0px;
   padding: 15px;
 }
 
-footer .foot-top img {
+.card-header img {
   width: 50px;
   height: auto;
 }
 
-footer .foot-top .dropdown {
+.card-header .dropdown {
   color: white;
   float: right;
   background-color: black;
 }
 
-footer .foot-top .dropdown button {
+.card-header .dropdown button {
   color: white;
 }
 
-footer .footer-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 15px;
+.footer-wrapper .fcontent .container li {
+  list-style: none;
+  padding: 2px;
 }
 
-footer .footer-wrapper ul {
-  width: 480px;
-  height: auto;
-  padding-right: 15px;
+.footer-wrapper .card-body p {
+  word-spacing: 12px;
+  display: inline;
 }
 
-footer .footer-wrapper li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-bottom: 5px;
+.footer-wrapper .card-body .icons {
+  float: right;
+  color: white;
+  margin-right: 30px;
 }
 
-.line {
-  width: 90%;
-  height: 0.5px;
-  background-color: #605e5e;
-  margin: 15px;
-}
-
-.countries {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  height: auto;
-}
-
-@media (max-width: 756px) {
-  .countries {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-.countries ul {
-  margin-left: 15px;
-  margin-right: 250px;
-}
-
-.countries ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-bottom: 5px;
-}
-
-.terms {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 15px;
-}
-
-.terms li {
-  padding-right: 30px;
+.footer-wrapper .card-body i {
+  margin: 10px;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: rgba(32, 31, 31, 0.993);
 }
 /*# sourceMappingURL=style.css.map */
